@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="todo-card">
+      <header class="todo-header">
+        <h1>My ToDo List</h1>
+        <p>Add tasks, mark them done, and keep your day on track.</p>
+      </header>
+
+      <form id="todo-form" class="todo-form">
+        <input id="todo-input" type="text" placeholder="What needs to be done?" autocomplete="off" />
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="todo-controls">
+        <button id="clear-completed" type="button">Clear Completed</button>
+        <span id="items-left">0 items left</span>
+      </div>
+
+      <ul id="todo-list" class="todo-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
